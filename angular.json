@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "hrJobPortal"
+  "defaultProject": "hrJobPortal",
+  "cli": {
+    "analytics": "bf0d72d8-4ad8-4677-a3d3-84a08ba5e726"
+  }
 }

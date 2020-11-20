@@ -1,1 +1,161 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('assets/font/AvenirNextLTPro-Medium.woff2') format('woff2'), url('assets/font/AvenirNextLTPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('assets/font/AvenirNextLTPro-Bold.woff2') format('woff2'), url('assets/font/AvenirNextLTPro-Bold.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('assets/font/AvenirNextLTPro-Light.woff2') format('woff2'), url('assets/font/AvenirNextLTPro-Medium.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('assets/font/AvenirNextLTPro-Regular.woff2') format('woff2'), url('assets/font/AvenirNextLTPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+//HR Portal Primary Theme Color
+$hr-primary: #135a70;
+$hr-primary-light: #18708b;
+$hr-primary-dark: #0f5367;
+$hr-font-dark: #2d2d2d;
+$primary-font: "Avenir Next LT Pro",
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji" !important;
+$secondary-font: "Avenir Next LT Pro",
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji" !important;
+// Bootstrap Variable Override
+$font-family-sans-serif: $primary-font;
+$headings-font-family: $secondary-font;
+$font-size-base: 0.9375rem;
+$light: #f2f5fc;
+$body-bg: $light;
+$gray-800: #323751;
+$btn-font-weight: 700;
+$btn-font-size: 0.9375rem;
+$btn-font-weight: 500;
+$font-weight-base: 400;
+$headings-font-weight: 700;
+$primary: $hr-primary;
+$theme-colors: ( "primary": $hr-primary,
+"danger": #fc574d,
+$light: #F7F9FC,
+);
+// Bootstrap SCSS import
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// Custom SCSS codes
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    background-color: $light;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 100% -10px;
+    color: $hr-font-dark;
+}
+
+.font {
+    &-primary {
+        font-family: $primary-font;
+    }
+    &-secondary {
+        font-family: $secondary-font;
+    }
+}
+
+.btn-primary {
+    background: $hr-primary;
+    color: #ffffff !important;
+}
+
+.btn-default {
+    border: 0 !important;
+    background: #fff;
+}
+
+a,
+a:hover,
+a:focus {
+    color: $hr-primary;
+    text-decoration: none;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+h5 {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    min-width: 100px;
+}
