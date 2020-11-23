@@ -8,7 +8,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ApplicantsListComponent } from './applicants-list/applicants-list.component';
 import { ApplicantsDetailComponent } from './applicants-detail/applicants-detail.component';
 import { MultiStepFormComponent } from './multi-step-form/multi-step-form.component';
-import { UserApplicantsListComponent } from './user-applicants-list/user-applicants-list.component';
+import { UserJobDetailsComponent } from './user-job-details/user-job-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { UserApplicantsListComponent } from './user-applicants-list/user-applica
     ApplicantsListComponent,
     ApplicantsDetailComponent,
     MultiStepFormComponent,
-    UserApplicantsListComponent
+    UserJobDetailsComponent
   ],
   imports: [
     BrowserModule,
