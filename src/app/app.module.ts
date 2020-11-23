@@ -8,6 +8,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ApplicantsListComponent } from './applicants-list/applicants-list.component';
 import { ApplicantsDetailComponent } from './applicants-detail/applicants-detail.component';
 import { MultiStepFormComponent } from './multi-step-form/multi-step-form.component';
+import { UserApplicantsListComponent } from './user-applicants-list/user-applicants-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MultiStepFormComponent } from './multi-step-form/multi-step-form.compon
     SignUpComponent,
     ApplicantsListComponent,
     ApplicantsDetailComponent,
-    MultiStepFormComponent
+    MultiStepFormComponent,
+    UserApplicantsListComponent
   ],
   imports: [
     BrowserModule,
