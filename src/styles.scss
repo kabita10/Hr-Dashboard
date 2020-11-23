@@ -95,6 +95,8 @@ body {
     background-repeat: no-repeat;
     background-position: 100% -10px;
     color: $hr-font-dark;
+    margin: 0px;
+    padding: 0px;
 }
 
 .font {
@@ -167,4 +169,129 @@ img {
 
 .badge-primary {
     background-color: rgba($color: $hr-primary, $alpha: 0.5);
+}
+
+// header
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+.navbar {
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    padding: 0.5rem 2rem;
+}
+
+.navbar-icon-top .navbar-nav .nav-link>.fa {
+    position: relative;
+    width: 36px;
+    font-size: 24px;
+    top: 3px;
+    line-height: 12px;
+    &>.badge {
+        font-size: 0.75rem;
+        position: absolute;
+        right: 0;
+        top: -10px;
+    }
+}
+
+.dropdown-menu {
+    left: -20px;
+}
+
+.user-avatar {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $hr-font-dark;
+}
+
+@media (min-width: 576px) {
+    .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
+        text-align: center;
+        display: table-cell;
+        height: 60px;
+        vertical-align: middle;
+        padding-top: 0;
+        padding-bottom: 0;
+        &>.fa {
+            display: block;
+            width: 48px;
+            top: 0;
+            line-height: 24px;
+        }
+    }
+    .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link>.fa>.badge {
+        top: -7px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
+        text-align: center;
+        display: table-cell;
+        height: 60px;
+        vertical-align: middle;
+        padding-top: 0;
+        padding-bottom: 0;
+        &>.fa {
+            display: block;
+            width: 48px;
+            top: 0;
+            line-height: 24px;
+        }
+    }
+    .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link>.fa>.badge {
+        top: -7px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+        text-align: center;
+        display: table-cell;
+        height: 60px;
+        vertical-align: middle;
+        padding-top: 0;
+        padding-bottom: 0;
+        &>.fa {
+            display: block;
+            width: 48px;
+            top: 0;
+            line-height: 24px;
+        }
+    }
+    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link>.fa>.badge {
+        top: -7px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
+        text-align: center;
+        display: table-cell;
+        height: 60px;
+        vertical-align: middle;
+        padding-top: 0;
+        padding-bottom: 0;
+        &>.fa {
+            display: block;
+            width: 48px;
+            top: 0;
+            line-height: 24px;
+        }
+    }
+    .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link>.fa>.badge {
+        top: -7px;
+    }
+}
+
+//    footer
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 0 20px #0000000a;
 }
