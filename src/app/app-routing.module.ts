@@ -11,11 +11,9 @@ import { HrDashboardComponent } from './hr-dashboard/hr-dashboard.component';
 
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
+{ path: '', component: AppComponent },
 { path: 'dashboard', component: HrDashboardComponent },
-];
-
-const routes: Routes = [{ path: 'sign-up', component: SignUpComponent },
+{ path: 'sign-up', component: SignUpComponent },
 { path: 'user-dashboard', component: UserDashboardComponent },
 { path: 'applicants-detail', component: ApplicantsDetailComponent },
 { path: 'applicant-list', component: ApplicantsListComponent },
