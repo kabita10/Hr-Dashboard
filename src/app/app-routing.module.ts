@@ -16,7 +16,7 @@ const routes: Routes = [
 { path: 'sign-up', component: SignUpComponent },
 { path: 'user-dashboard', component: UserDashboardComponent },
 { path: 'applicants-detail', component: ApplicantsDetailComponent },
-{ path: 'applicant-list', component: ApplicantsListComponent },
+{ path: 'applicants-list', component: ApplicantsListComponent },
 { path: 'form', component: MultiStepFormComponent },
 { path: 'job-details', component: UserJobDetailsComponent}
 ];

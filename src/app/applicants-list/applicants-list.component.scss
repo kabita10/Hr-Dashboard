@@ -1,0 +1,44 @@
+@import '../../styles.scss';
+// table
+$imageBig: 90px;
+$imageSmall: 50px;
+$padding: 15px;
+img {
+    border-radius: 50%;
+    height: $imageSmall;
+    width: $imageSmall;
+}
+
+.table-applicants {
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.applicants-name {
+    color: $hr-font-dark;
+    font-weight: 500;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 7px;
+    td,
+    th {
+        color: $hr-font-dark;
+        padding: $padding;
+    }
+    td {
+        text-align: left;
+        vertical-align: middle !important;
+        .fa {
+            font-size: 30px;
+        }
+    }
+    th {
+        background-color: #E4E7F4;
+        font-weight: 500;
+    }
+    tr {
+        background-color: #ffffff;
+    }
+}
