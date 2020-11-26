@@ -9,6 +9,8 @@ import { ApplicantsListComponent } from './applicants-list/applicants-list.compo
 import { ApplicantsDetailComponent } from './applicants-detail/applicants-detail.component';
 import { MultiStepFormComponent } from './multi-step-form/multi-step-form.component';
 import { UserJobDetailsComponent } from './user-job-details/user-job-details.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { UserJobDetailsComponent } from './user-job-details/user-job-details.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
