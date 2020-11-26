@@ -1,7 +1,7 @@
 
 .sidenav {
     height: 100%;
-    width:300px;
+    width:265px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -27,12 +27,103 @@
     font-size:16px; 
     padding: 0px 10px;
   }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 60px;}
-    .sidenav a {font-size: 18px;}
+  aside.left-panel {
+    height: 100vh;
+    color: #fff;
+    padding: 0;
+    vertical-align: top;
+    width: 280px;
+    box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0px;
+    z-index: 999;
+    padding: 30px 0;
+    padding-bottom: 80px;
+    .logo {
+      padding: 0 50px;
+      margin-bottom: 30px;
+    }
+      img {
+        width: 125px;
+      }
+    }
+
+aside.inner-left-panel {
+  background: #fff;
+  height: calc(100vh - 70px);
+  vertical-align: top;
+  width: 280px;
+  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  bottom: 0;
+  top: 0px;
+  z-index: 999;
+  padding: 15px;
+  padding-top: 30px;
+  margin-left: -35px;
+  overflow: auto;
+  .form-control {
+    height: 30px;
+    padding: 0 10px;
+    font-size: 0.875rem;
   }
+}
+.inner-right-panel {
+  margin-left: 280px;
+  margin-top: 0px;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 100px;
+}
+table.table {
+  border-collapse: separate;
+  border-spacing: 0 7px;
+  margin-top: 15px;
+  td {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    background: #fff;
+    padding: 1rem;
+    vertical-align: middle;
+    box-shadow: 10px 3px 10px #0000000f;
+    &:last-child {
+      border-right: 1px solid #dee2e6;
+      border-radius: 0 4px 4px 0;
+    }
+    &:first-child {
+      border-left: 1px solid #dee2e6;
+      border-radius: 4px 0 0 4px;
+      font-weight: 500;
+    }
+  }
+  th {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    background: #e4e7f4;
+    padding: 1rem;
+    vertical-align: middle;
+    font-weight: 500;
+    box-shadow: 10px 3px 10px #0000000f;
+    &:last-child {
+      border-right: 1px solid #dee2e6;
+      border-radius: 0 4px 4px 0;
+    }
+    &:first-child {
+      border-left: 1px solid #dee2e6;
+      border-radius: 4px 0 0 4px;
+    }
+  }
+}
+  @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 60px; }
+    .sidenav a {
+      font-size: 18px;
+    }
   aside.left-panel .logo {
     padding: 0 50px;
     margin-bottom: 30px;
 }
+  }

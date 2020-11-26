@@ -11,12 +11,18 @@ import { ApplicantsListComponent } from './applicants-list/applicants-list.compo
 import { ApplicantsDetailComponent } from './applicants-detail/applicants-detail.component';
 import { MultiStepFormComponent } from './multi-step-form/multi-step-form.component';
 import { UserJobDetailsComponent } from './user-job-details/user-job-details.component';
+import { Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: '', component: AppComponent },
+  { path: 'hr-dashboard', component: HrDashboardComponent },
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HrDashboardComponent
     UserDashboardComponent,
+    HrDashboardComponent,
     SignUpComponent,
     ApplicantsListComponent,
     ApplicantsDetailComponent,
