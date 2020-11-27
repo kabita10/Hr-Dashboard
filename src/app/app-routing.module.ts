@@ -1,3 +1,4 @@
+import { LogInComponent } from './log-in/log-in.component';
 import { UserJobDetailsComponent } from './user-job-details/user-job-details.component';
 import { MultiStepFormComponent } from './multi-step-form/multi-step-form.component';
 import { ApplicantsListComponent } from './applicants-list/applicants-list.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
 { path: '', component: AppComponent },
 { path: 'dashboard', component: HrDashboardComponent },
 { path: 'sign-up', component: SignUpComponent },
+{ path: 'login', component: LogInComponent },
 { path: 'user-dashboard', component: UserDashboardComponent },
 { path: 'applicants-detail', component: ApplicantsDetailComponent },
 { path: 'applicants-list', component: ApplicantsListComponent },

@@ -13,6 +13,7 @@ import { MultiStepFormComponent } from './multi-step-form/multi-step-form.compon
 import { UserJobDetailsComponent } from './user-job-details/user-job-details.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { Routes } from '@angular/router';
+import { LogInComponent } from './log-in/log-in.component';
 
 const routes: Routes = [
   { path: '', component: AppComponent },
@@ -28,7 +29,8 @@ const routes: Routes = [
     ApplicantsListComponent,
     ApplicantsDetailComponent,
     MultiStepFormComponent,
-    UserJobDetailsComponent
+    UserJobDetailsComponent,
+    LogInComponent
   ],
   imports: [
     BrowserModule,
