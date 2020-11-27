@@ -30,6 +30,7 @@ table {
     td {
         text-align: left;
         vertical-align: middle !important;
+        padding: 0.8rem !important;
         .fa {
             font-size: 30px;
         }
@@ -41,4 +42,8 @@ table {
     tr {
         background-color: #ffffff;
     }
+}
+
+.table.job-information {
+    border-collapse: collapse;
 }
