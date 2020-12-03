@@ -1,1 +1,337 @@
-<p>multi-step-form works!</p>
+<body>
+    <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+        <div class="container">
+            <div class="card apply-form-card my-3 p-md-5 p-4">
+                <!-- accordion strat here -->
+                <div id="accordion">
+                    <!-- Personal information card -->
+                    <div class="card">
+                        <div class="mb-3" style="clear: both;">
+                            <h4 style="float: left;">Personal information</h4>
+                            <p style="float: right;">
+                                <a class="btn btn-primary float-right" data-toggle="collapse" href="#collapsePersonalInfo" role="button" aria-expanded="false" aria-controls="collapsePersonalInfo">
+                                      Add
+                                    </a>
+                            </p>
+                        </div>
+
+                        <div id="collapsePersonalInfo" class="collapse show" data-parent="#accordion">
+                            <div class="row no-gutters">
+                                <div class="col-md-12">
+                                    <div class="card-body">
+                                        <form action="#">
+                                            <div class="row row-space">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="first-name" class="sr-only">First Name</label>
+                                                        <input type="text" name="first-name" id="first-name" class="form-control" placeholder="First Name*" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="last-name" class="sr-only">Last Name</label>
+                                                        <input type="text" name="last-name" id="last-name" class="form-control" placeholder="Last Name*" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row row-space">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="email" class="sr-only">Email</label>
+                                                        <input type="email" name="email" id="email" class="form-control" placeholder="Email*" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="contact-number" class="sr-only">Contact Number</label>
+                                                        <input type="number" name="contact-number" id="contact-number" class="form-control" placeholder="Contact Number*" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row row-space">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="permanent-location" class="sr-only">Permanent Location</label>
+                                                        <input type="text" name="permanent-location" id="permanent-location" class="form-control" placeholder="Permanent Location*" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="communication-location" class="sr-only">Communication Location</label>
+                                                        <input type="text" name="Communication Location" id="communication-location" class="form-control" placeholder="Communication Location*" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <!-- Job Details card-->
+                    <div class="card">
+                        <div class="my-3" style="clear: both;">
+                            <h4 style="float: left;">Job Details</h4>
+                            <p style="float: right;">
+                                <a class="btn btn-primary float-right" data-toggle="collapse" href="#collapseJobDetails" role="button" aria-expanded="false" aria-controls="collapseJobDetails">
+                                      Add
+                                    </a>
+                            </p>
+                        </div>
+                        <div id="collapseJobDetails" class="collapse" data-parent="#accordion">
+                            <div class="row no-gutters">
+                                <div class="col-md-12">
+                                    <div class="card-body">
+                                        <form action="#">
+                                            <div class="row row-space">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="applied-position" class="sr-only">Position you're applying for</label>
+                                                        <input type="text" name="applied-position" id="applied-position" class="form-control" placeholder="Position you're applying for:*" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="start-date" class="sr-only">Available Start Date</label>
+                                                        <input type="text" name="start-date" id="start-date" class="form-control" placeholder="Available Start Date*" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row row-space">
+                                                <div class="col-md-6">
+
+                                                    <div class="form-group">
+                                                        <label for="experience" class="sr-only">Experience Level</label>
+                                                        <select type="text" name="experience" id="experience" class="form-control" placeholder="Experience Level*" required>>
+                                                            <option value="-1">Select your relevant experience level</option>
+                                                          <option value="1">Intern / Trainee</option>
+                                                          <option value="2">Junior / Entry-level (0-2 years experience)</option>
+                                                          <option value="3">Mid-level (2+ years experience)</option>
+                                                          <option value="4">Lead / Manager</option>
+                                                          <option value="5">Senior Manager / Director</option>
+                                                          <option value="6">Executive</option>
+                                                          <option value="7">Not Applicable</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="commitment" class="sr-only">Desired Commitment</label>
+                                                        <input type="text" name="commitment" id="commitment" class="form-control" placeholder="Desired Commitment (eg: FullTime)*" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row row-space">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="previous-job" class="sr-only">Previous Job</label>
+                                                        <input type="text" name="previous-job" id="previous-job" class="form-control" placeholder="Previous Job*" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="previous-company" class="sr-only">Previous Company</label>
+                                                        <input type="text" name="previous-company" id="previous-company" class="form-control" placeholder="Previous Company*" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row row-space">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="skills">Add a skill and hit [,] or [Tab] or [Enter]</label> <br>
+                                                        <div id="tags">
+                                                            <input type="text" value="" class="form-control" placeholder="Add a skill*" required/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row row-space">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="cover-letter" class="sr-only">Cover Letter</label>
+                                                        <textarea class="form-control" name="cover-letter" id="cover-letter" rows="6" maxlength="250" placeholder="Cover Letter (max 250 words)*" required></textarea>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- Education card-->
+                    <div class="card">
+                        <div class="my-3" style="clear: both;">
+                            <h4 style="float: left;">Education</h4>
+                            <p style="float: right;">
+                                <a class="btn btn-primary float-right" data-toggle="collapse" href="#collapseEducation" role="button" aria-expanded="false" aria-controls="collapseEducation">
+                                      Add
+                                    </a>
+                            </p>
+                        </div>
+
+                        <div id="collapseEducation" class="collapse" data-parent="#accordion">
+                            <div class="row no-gutters">
+                                <div class="col-md-12">
+                                    <div class="card-body">
+                                        <form action="#">
+                                            <div class="row row-space">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="degree" class="sr-only">Highest Degree</label>
+                                                        <input type="text" name="degree" id="degree" class="form-control" placeholder="Highest Degree (eg: Bachelor's degree - BA,BS)*" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="university" class="sr-only">University</label>
+                                                        <input type="text" name="university" id="university" class="form-control" placeholder="University*" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row row-space">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="major" class="sr-only">Field or Major</label>
+                                                        <input type="text" name="major" id="major" class="form-control" placeholder="Field or Major (eg: Computer Science)*" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label> <span class="mr-2">Are you currently a student?</span><input type="checkbox" name="agree" id="agree"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- On the web section -->
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h4 class="my-3">On the web</h4>
+                            <form action="#">
+                                <div class="row row-space">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="linkedin" class="sr-only">Linkedin</label>
+                                            <input type="url" name="linkedin" id="linkedin" class="form-control" placeholder="Linkedin">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="facebook" class="sr-only">Facebook</label>
+                                            <input type="url" name="facebook" id="facebook" class="form-control" placeholder="Facebook">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-space">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="twitter" class="sr-only">Twitter</label>
+                                            <input type="url" name="twitter" id="twitter" class="form-control" placeholder="Twitter">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="portfolio" class="sr-only">Portfolio Link</label>
+                                            <input type="url" name="portfolio" id="portfolio" class="form-control" placeholder="Portfolio Link">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Resume section -->
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body mb-3">
+                            <h4 class="my-3">Resume</h4>
+                            <form action="#">
+                                <div class="row row-space">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="cv"> <span style="font-weight: 500; color: #135a70;">Browse resume</span> or just drop it here:</label>
+                                            <input type="file" id="cv" name="cv" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input name="next" id="next" class="btn btn-primary next-btn" type="submit" value="Next">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Company policy section -->
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h4 class="my-3">Company Policies</h4>
+                            <form action="#" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Privacy Policy.'); return false; }">
+                                <div class="row row-space">
+                                    <div class="col-md-12">
+                                        <div>
+                                            <p>This privacy policy applies between you, the User of this Website and Genese Solution Limited, the owner and provider of this Website. Genese Solution Limited takes the privacy of your information very seriously.
+                                                This privacy policy applies to our use of any and all Data collected by us or provided by you in relation to your use of the Website.</p>
+                                            <p>Genese Solution Limitedreserves the right to change this privacy policy as we may deem necessary from time to time or as may be required by law. Any changes will be immediately posted on the Website and you
+                                                are deemed to have accepted the terms of the privacy policy on your first use of the Website following the alterations. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-space mt-3">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label><input type="checkbox" name="agree" id="agree" class="mr-2" >I have read and agree to the Privacy Policy.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input name="next" id="next" class="btn btn-primary next-btn" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        jQuery(function($) {
+            $('#tags input').on('focusout', function() {
+                var txt = this.value.replace(/[^a-zA-Z0-9\+\-\.\#]/g, ''); // allowed characters list
+                if (txt) $(this).before('<span class="tag">' + txt + '</span>');
+                this.value = "";
+                this.focus();
+            }).on('keyup', function(e) {
+                // comma|enter (add more keyCodes delimited with | pipe)
+                if (/(188|13)/.test(e.which)) $(this).trigger('focusout');
+            });
+
+            $('#tags').on('click', '.tag', function() {
+                if (confirm("Really delete this tag?")) $(this).remove();
+            });
+        });
+    </script>
+</body>
