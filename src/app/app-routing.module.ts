@@ -1,3 +1,4 @@
+import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { UserJobDetailsComponent } from './user-job-details/user-job-details.component';
 import { MultiStepFormComponent } from './multi-step-form/multi-step-form.component';
@@ -20,7 +21,8 @@ const routes: Routes = [
 { path: 'applicants-detail', component: ApplicantsDetailComponent },
 { path: 'applicants-list', component: ApplicantsListComponent },
 { path: 'form', component: MultiStepFormComponent },
-{ path: 'job-details', component: UserJobDetailsComponent}
+{ path: 'job-details', component: UserJobDetailsComponent},
+{ path: 'landing-page', component: LandingPageComponent}
 ];
 
 @NgModule({

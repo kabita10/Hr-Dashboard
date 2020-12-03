@@ -14,6 +14,8 @@ import { UserJobDetailsComponent } from './user-job-details/user-job-details.com
 import { NgxPaginationModule } from 'ngx-pagination';
 import { Routes } from '@angular/router';
 import { LogInComponent } from './log-in/log-in.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { OwlModule } from 'ngx-owl-carousel';
 
 const routes: Routes = [
   { path: '', component: AppComponent },
@@ -30,12 +32,15 @@ const routes: Routes = [
     ApplicantsDetailComponent,
     MultiStepFormComponent,
     UserJobDetailsComponent,
-    LogInComponent
+    LogInComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    OwlModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

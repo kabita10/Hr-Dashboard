@@ -1,0 +1,183 @@
+@import '../../styles.scss';
+//job-perks
+.job_perks_area {
+    .single_perks {
+        padding: 30px 30px;
+        height: 100%;
+        .thumb {
+            width: 70px;
+            height: 70px;
+            margin: auto;
+            img {
+                width: 100%;
+            }
+        }
+        h5 {
+            margin-top: 24px;
+            margin-bottom: 6px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/*owl-dots*/
+
+.owl-dots {
+    text-align: center;
+    padding-top: 15px;
+    button.owl-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 5px;
+        border: 2px solid #135A70;
+        &.active {
+            background-color: #135A70;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.owl-nav {
+    display: none;
+}
+
+//job listing area scss
+.job_listing_area {
+    .job_lists {
+        .single_jobs {
+            padding: 30px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            @media (max-width: 767px) {
+                display: block !important;
+            }
+            .jobs_left {
+                @media (max-width: 767px) {
+                    display: block !important;
+                    overflow: hidden;
+                }
+                .jobs_conetent {
+                    float: left;
+                    h4 {
+                        color: $hr-font-dark;
+                        @include transition(.3s);
+                        @media (max-width: 767px) {
+                            margin-top: 15px;
+                        }
+                        &:hover {
+                            color: $hr-primary;
+                        }
+                    }
+                    .links_locat {
+                        @media (max-width: 767px) {
+                            display: block !important;
+                        }
+                        .location {
+                            margin-right: 18px;
+                            color: $hr-primary;
+                            @media (max-width: 767px) {
+                                margin-right: 10px;
+                            }
+                            p {
+                                margin-bottom: 0;
+                                i {
+                                    margin-right: 7px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .jobs_right {
+                .apply {
+                    text-align: right;
+                    @media (max-width: 767px) {
+                        text-align: left;
+                    }
+                }
+                .date {
+                    text-align: right;
+                    margin-top: 10px;
+                    @media (max-width: 767px) {
+                        text-align: left;
+                    }
+                    p {
+                        margin-bottom: 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//hero slider area scss
+.slider_bg_1 {
+    background-image: url(../../assets/img/banner.png);
+}
+
+.slider_area {
+    position: relative;
+    z-index: 0;
+    .single_slider {
+        height: 650px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        @media (max-width: 767px) {
+            height: auto;
+        }
+        @media (min-width: 992px) and (max-width: 1200px) {
+            height: 550px;
+        }
+        .slider_text {
+            @media (max-width: 767px) {
+                margin-top: 120px;
+                margin-bottom: 100px;
+            }
+            h5 {
+                font-weight: 500;
+            }
+            h2 {
+                @media (max-width: 767px) {
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                    line-height: 42px;
+                }
+                @media (min-width: 768px) and (max-width: 991px) {
+                    font-size: 34px;
+                    line-height: 1.4;
+                    margin-bottom: 35px;
+                }
+            }
+            p {
+                font-size: 16px;
+            }
+            .btn-open {
+                height: 50px;
+                width: 180px;
+                line-height: 38px;
+                background-color: #ffffff;
+                color: $hr-primary !important;
+                border-color: #ffffff;
+                ;
+            }
+        }
+    }
+    .ilstration_img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        right: 7%;
+        @media (min-width: 992px) and (max-width: 1200px) {
+            right: 0;
+        }
+    }
+}
