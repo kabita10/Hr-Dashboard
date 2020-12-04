@@ -11,9 +11,10 @@ import { ApplicantsListComponent } from './applicants-list/applicants-list.compo
 import { ApplicantsDetailComponent } from './applicants-detail/applicants-detail.component';
 import { MultiStepFormComponent } from './multi-step-form/multi-step-form.component';
 import { UserJobDetailsComponent } from './user-job-details/user-job-details.component';
-// import { NgxPaginationModule } from 'ngx-pagination';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { LogInComponent } from './log-in/log-in.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { OwlModule } from 'ngx-owl-carousel';
 
 
 @NgModule({
@@ -26,12 +27,15 @@ import { LogInComponent } from './log-in/log-in.component';
     ApplicantsDetailComponent,
     MultiStepFormComponent,
     UserJobDetailsComponent,
-    LogInComponent
+    LogInComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule,
     AppRoutingModule,
-    // NgxPaginationModule
+    OwlModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

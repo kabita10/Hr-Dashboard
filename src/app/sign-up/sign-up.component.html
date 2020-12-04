@@ -1,93 +1,44 @@
-<div class="inner-content">
-<aside class="inner-left-panel" id="inner-left-panel">
-    <div class="sidenav pl-3">
-      <div class="sidebar-image pl-4 pb-4 pt-2">
-        <img src="../assets/img/logo.png" height="50px">
-      </div>
-      <div class="heading-description">
-      <h4 class="text-white">Genese Software Solution</h4>
-      <p class="heading-text text-white">We develop all types of cloud-based
-        solutions providing safe, seamless 
-        and rapid migration of your business
-        applications to the cloud.</p>
-        </div>
-        <div class="footer">
-        <a href="tel:9801902057 "><i class="fas fa-phone-alt mr-2"></i>+977 9801902057 </a>
-        <a href="www.genesesolution.com"><i class="fas fa-location-arrow mr-2"></i>www.genesesolution.com</a>
-        <a href="mailto:info@genesesolution.com"><i class="fas fa-globe mr-2"></i>info@genesesolution.com</a>
-        </div>
-        </div>
-    <hr />
-  </aside>
-  <div class="inner-right-panel" id="inner-right-panel">
-<div class="signup-section">
-  <div class="section-header mt-3">
-    <h4>Create your account</h4>
-    <p class="text-muted mb-3">Register with basic information ,complete your profile and start applying for the job.</p>
-  </div>
-  <!-- <div class="form-row"> -->
-    <div class="form-group col-lg-8">
-      <label class="sr-only" for="inlineFormInputGroup">Full name</label>
-      <div class="input-group mb-2">
-        <div class="input-group-prepend">
-          <div class="input-group-text"><i class="fas fa-user-friends"></i></div>
-        </div>
-        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Full name">
-      </div>
-    </div>
-    <div class="form-group col-lg-8">
-        <label class="sr-only" for="inlineFormInputGroup">Select Preferred Job Category</label>
-        <div class="input-group mb-2">
-            <select class="form-control mb-2">
-                <option>Select Prefferred Job Category</option>
-                <option>WordPress Developer</option>
-                <option>Frontend Developer</option>
-              </select>
-        </div>
-      </div>
-    <div class="form-group col-lg-8">
-      <label class="sr-only" for="inlineFormInputGroup">Mobile Number</label>
-      <div class="input-group mb-2">
-        <div class="input-group-prepend">
-          <div class="input-group-text"><i class="fas fa-phone-alt"></i></div>
-        </div>
-        <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="Mobile Number">
-      </div>
-    </div>
-    <div class="form-group col-lg-8">
-        <label class="sr-only" for="inlineFormInputGroup">Email Address</label>
-        <div class="input-group mb-2">
-          <div class="input-group-prepend">
-            <div class="input-group-text"><i class="fas fa-envelope"></i></div>
-          </div>
-          <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Email Address">
-        </div>
-      </div>
-      <div class="form-group col-lg-8">
-        <label class="sr-only" for="inlineFormInputGroup">Password</label>
-        <div class="input-group mb-2">
-          <div class="input-group-prepend">
-            <div class="input-group-text"><i class="fas fa-lock"></i></div>
-          </div>
-          <input type="password" class="form-control" id="inlineFormInputGroup" placeholder="Password">
-        </div>
-      </div>
-      <div class="form-group col-lg-8">
-        <label class="sr-only" for="inlineFormInputGroup">Confirm Password</label>
-        <div class="input-group mb-2">
-          <div class="input-group-prepend">
-            <div class="input-group-text"><i class="fas fa-lock"></i></div>
-          </div>
-          <input type="password" class="form-control" id="inlineFormInputGroup" placeholder="Confirm Password">
-        </div>
-      </div>
-      <p class="ml-3 mt-3 mb-3">By clicking on`  Create new Account ' below you are agreeing to the terms and <br>privacy 
-        of Genese Solution!</p>
-        <div class="form-group col-lg-8">
-            <label class="sr-only" for="inlineFormInputGroup">Confirm Password</label>
-            <div class="input-group mb-2">
-                <button class="btn btn-primary btn btn-block" type="submit">Create your Account</button>
+<main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    <div class="container">
+        <div class="card login-card">
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <img src="../../assets/img/login-banner.jpg" alt="login" class="login-card-img">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <div class="brand-wrapper mb-4">
+                            <img src="./assets/img/genese-logo.png" alt="logo" class="logo mr-2 mb-2"> <span style="font-weight: 600; color: #135a70;">HR Job Portal</span>
+                        </div>
+                        <h4 class="mb-4">Create your account</h4>
+                        <form action="#!">
+                            <div class="form-group">
+                                <label for="full-name" class="sr-only">Full Name</label>
+                                <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="sr-only">Password</label>
+                                <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                            </div>
+
+                            <div class="form-group mb-4">
+                                <label for="confirm-password" class="sr-only">Confirm Password</label>
+                                <input type="password" name="confirm-password" id="confirm-password" class="form-control" placeholder="Confirm Password">
+                            </div>
+                            <input name="sign-up" id="sign-up" class="btn btn-primary login-btn mb-4" type="button" value="Sign Up">
+                        </form>
+                        <p class="login-card-footer-text">Already have an account? <a routerLink="/login">Sign in here</a></p>
+                        <nav class="login-card-footer-nav">
+                            <a href="#" class="mr-3">Terms & conditions</a>
+                            <a href="#">Privacy policy</a>
+                        </nav>
+                    </div>
+                </div>
             </div>
-          </div>
-      </div>
-      </div>
+        </div>
+    </div>
+</main>
