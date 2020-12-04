@@ -1,7 +1,7 @@
  // Login 
  .brand-wrapper {
      .logo {
-         width: 100px;
+         width: 90px;
          height: auto;
          border-radius: 0;
      }
@@ -20,7 +20,7 @@
          object-fit: cover;
      }
      .card-body {
-         padding: 85px 60px 60px;
+         padding: 40px 60px 60px;
          @media (max-width: 422px) {
              padding: 35px 20px;
          }
@@ -31,7 +31,7 @@
      .form-control {
          border: 1px solid #ced3db;
          padding: 15px;
-         margin-bottom: 20px;
+         margin-bottom: 15px;
          min-height: 45px;
          font-size: 14px;
          line-height: 15;
@@ -53,7 +53,7 @@
      }
      &-footer-text {
          font-size: 16px;
-         margin-bottom: 60px;
+         margin-bottom: 35px;
          @media (max-width: 767px) {
              margin-bottom: 24px;
          }

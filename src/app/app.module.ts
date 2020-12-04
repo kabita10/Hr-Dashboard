@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+// import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,16 +11,11 @@ import { ApplicantsListComponent } from './applicants-list/applicants-list.compo
 import { ApplicantsDetailComponent } from './applicants-detail/applicants-detail.component';
 import { MultiStepFormComponent } from './multi-step-form/multi-step-form.component';
 import { UserJobDetailsComponent } from './user-job-details/user-job-details.component';
-import { NgxPaginationModule } from 'ngx-pagination';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { LogInComponent } from './log-in/log-in.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { OwlModule } from 'ngx-owl-carousel';
 
-const routes: Routes = [
-  { path: '', component: AppComponent },
-  { path: 'hr-dashboard', component: HrDashboardComponent },
-];
 
 @NgModule({
   declarations: [
@@ -37,8 +32,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    RouterModule,
     AppRoutingModule,
-    NgxPaginationModule,
     OwlModule
 
   ],
