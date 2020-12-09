@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AuthenticationService } from '../servics/authentication/authentication.service';
 
 @Component({
   selector: 'app-applicants-list',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ApplicantsListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authenticationService: AuthenticationService) {
+    this.authenticationService.setAuthenticated(true);
+   }
 
   ngOnInit(): void {
   }

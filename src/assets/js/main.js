@@ -26,3 +26,18 @@ $('.perks_active').owlCarousel({
         }
     }
 })
+
+// added
+// const hamburgerBtn = document.getElementById('hamburgerBtn');
+
+
+// hamburgerBtn.addEventListener('click', () => {
+//     sidenav.classList.toggle('open');
+// })
+
+function toggleMenu() {
+    let sidenav = document.querySelector('.sidenav');
+    let toggle = document.querySelector('.sidenav');
+    sidenav.classList.toggle('active');
+    toggle.classList.toggle(active);
+}

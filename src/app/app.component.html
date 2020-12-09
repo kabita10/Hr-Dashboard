@@ -1,17 +1,17 @@
 <!-- navbar -->
-<nav class="navbar navbar-icon-top navbar-expand-lg navbar-light bg-white">
+<nav class="navbar navbar-icon-top navbar-expand-lg navbar-light" *ngIf="authenticationService.isAuthenticated">
     <!-- <a class="navbar-brand" href="#"><img src="assets/img/genese-logo.png" alt="genese-logo" width="85px"></a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
-</button>
+</button> -->
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class="fa fa-bell">
+                    <!-- <i class="fa fa-bell">
         <span class="badge badge-info">3</span>
-      </i>
+      </i> -->
                 </a>
             </li>
         </ul>
@@ -35,10 +35,82 @@
     </div>
 </nav>
 
+<!-- Sidebar -->
+<!-- <div id="hamburgerBtn"></div> -->
+<!-- <aside class="innerLeftPanel" id="inner-Left" *ngIf="authenticationService.isAuthenticated"> -->
+<aside class="innerLeftPanel"></aside>
+<div class="sidenav" *ngIf="authenticationService.isAuthenticated">
+    <div class="rg-sidebar">
+        <div class="sidebar-image pl-4 pb-4 pt-2">
+            <img src="../assets/img/logo.png" height="50px">
+        </div>
+        <div class="nav-hvr">
+            <a routerLink="/dashboard"><i class="fa fa-home mx-3" aria-hidden="true"></i><span class="title">Dashboard</span></a>
+            <a href="#"><i class="fa fa-users mx-3" aria-hidden="true"></i><span class="title">Recruitment</span></a>
+            <a href="#"><i class="fa fa-th-list mx-3" aria-hidden="true"></i><span class="title">Onboarding</span></a>
+            <a href="#"><i class="fa fa-tasks mx-3" aria-hidden="true"></i><span class="title">Recruitment Tasks</span></a>
+            <a href="#"><i class="fa fa-calendar mx-3" aria-hidden="true"></i><span class="title">Calendar</span></a>
+            <a routerLink="/form"><i class="fa fa-list-ol mx-3" aria-hidden="true"></i><span class="title">Multistep Form</span></a>
+            <a href="#"><i class="fa fa-plus mx-3" aria-hidden="true"></i><span class="title">Add vacancy</span></a>
+            <a routerLink="/applicants-list"><i class="fa fa-tasks mx-3" aria-hidden="true"></i><span class="title">Applicants list</span></a>
+            <a routerLink="/login"><i class="fa fa-sign-in mx-3" aria-hidden="true"></i><span class="title">Login</span></a>
+            <a href=""><small>Account</small></a>
+            <!-- <a href="#account-settings"><i class="fa fa-cogs mr-3" aria-hidden="true"></i>Settings <span
+      class="alert alert-info rounded-circle ml-3" role="alert">
+      3</span></a> -->
+            <hr>
+            <div class="row">
+                <div class="dropdown profile-dropdown">
+                    <!-- <div class="user-area dropdown">
+        <img class=" user-avatar" src="./assets/img/kritika.jpg" alt="User Avatar">
+      </div> -->
+                    <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="user-area dropdown"><img class=" user-avatar mr-2" src="./assets/img/kritika.jpg"
+            alt="User Avatar"></span>Kritika Poudel
+                        <span class="typcn typcn-arrow-unsorted toggle-icon"></span>
+                        <span class="typcn typcn-user-outline user-icon"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">Applied Jobs</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="toggle" onclick="toggleMenu()"></div> -->
+        <!-- <div class="dropdown profile-dropdown">
+  <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false">
+    first name
+    <small class="d-block">Susmita Poudel</small>
+    <span class="typcn typcn-arrow-unsorted toggle-icon"></span>
+    <span class="typcn typcn-user-outline user-icon"></span>
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <div class="account-info">
+      <p><strong>first name</strong></p>
+      <p>user email</p>
+      <p>Account #:1234</p>
+    </div>
+    <a href="" class="dropdown-item" >My profile</a>
+    <a href="" class="dropdown-item">Applied Jobs</a>
+    <a href="" class="dropdown-item">Logout</a>
+  </div>
+</div>  -->
+    </div>
+</div>
+<div class="toggle" onclick="toggleMenu()"></div>
+
+
+
 <router-outlet></router-outlet>
 
 <!-- Footer -->
-<footer class="bg-white text-muted">
+<footer class="bg-white text-muted" *ngIf="authenticationService.isAuthenticated">
     <div class="col-md-12">
         <div class="py-3 d-flex justify-content-center align-items-center">
             © 2020 HR Job Portal. All rights reserved.
