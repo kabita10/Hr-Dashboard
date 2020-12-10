@@ -15,6 +15,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LogInComponent } from './log-in/log-in.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { OwlModule } from 'ngx-owl-carousel';
+import { AddJobVacancyComponent } from './add-job-vacancy/add-job-vacancy.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { OwlModule } from 'ngx-owl-carousel';
     MultiStepFormComponent,
     UserJobDetailsComponent,
     LogInComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    AddJobVacancyComponent
   ],
   imports: [
     BrowserModule,

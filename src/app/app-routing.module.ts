@@ -10,6 +10,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HrDashboardComponent } from './hr-dashboard/hr-dashboard.component';
+import { AddJobVacancyComponent } from './add-job-vacancy/add-job-vacancy.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
 { path: 'applicants-list', component: ApplicantsListComponent },
 { path: 'form', component: MultiStepFormComponent },
 { path: 'job-details', component: UserJobDetailsComponent},
-{ path: 'landing-page', component: LandingPageComponent}
+{ path: 'landing-page', component: LandingPageComponent},
+{ path: 'add-job-vacancy', component: AddJobVacancyComponent}
 ];
 
 @NgModule({

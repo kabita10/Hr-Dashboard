@@ -1,7 +1,19 @@
+.applicant {
+    margin-left: 265px;
+}
+
+img.user-profile {
+    float: left;
+}
+
 .panel {
     background-color: #ffffff;
     border-radius: 5px;
     padding: 50px 40px;
+}
+
+.profile-panel {
+    display: flex;
 }
 
 dt {
@@ -48,7 +60,10 @@ dd.m-right {
     padding: 4px 8px;
 }
 
-@media (max-width: 731px) {
+@media (max-width: 767px) {
+    .applicant {
+        margin-left: 0;
+    }
     .border-right {
         border-right: none!important;
     }
@@ -64,5 +79,24 @@ dd.m-right {
     span.ui-brd.mr-3.sub {
         margin-bottom: 16px;
         text-align: center;
+    }
+    .mob-profile {
+        text-align: center;
+    }
+    .profile-panel {
+        display: inline;
+    }
+    img.user-profile {
+        float: none;
+    }
+    .applicant-header {
+        text-align: center;
+        font-size: 28px;
+    }
+    .profile-text {
+        padding-top: 20px;
+    }
+    .btn-1 {
+        margin: 15px 0 20px 0;
     }
 }
