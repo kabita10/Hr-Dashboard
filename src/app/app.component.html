@@ -46,14 +46,16 @@
         </div>
         <div class="nav-hvr">
             <a routerLink="/dashboard"><i class="fa fa-home mx-3" aria-hidden="true"></i><span class="title">Dashboard</span></a>
-            <a href="#"><i class="fa fa-users mx-3" aria-hidden="true"></i><span class="title">Recruitment</span></a>
-            <a href="#"><i class="fa fa-th-list mx-3" aria-hidden="true"></i><span class="title">Onboarding</span></a>
-            <a href="#"><i class="fa fa-tasks mx-3" aria-hidden="true"></i><span class="title">Recruitment Tasks</span></a>
-            <a href="#"><i class="fa fa-calendar mx-3" aria-hidden="true"></i><span class="title">Calendar</span></a>
+            <a routerLink="/user-dashboard"><i class="fa fa-users mx-3" aria-hidden="true"></i><span class="title">User Dashboard</span></a>
+            <a routerLink="/job-details"><i class="fa fa-th-list mx-3" aria-hidden="true"></i><span class="title">User Job Details</span></a>
+            <!-- <a href="#"><i class="fa fa-tasks mx-3" aria-hidden="true"></i><span class="title">Recruitment Tasks</span></a>
+            <a href="#"><i class="fa fa-calendar mx-3" aria-hidden="true"></i><span class="title">Calendar</span></a> -->
             <a routerLink="/form"><i class="fa fa-list-ol mx-3" aria-hidden="true"></i><span class="title">Multistep Form</span></a>
-            <a href="#"><i class="fa fa-plus mx-3" aria-hidden="true"></i><span class="title">Add vacancy</span></a>
+            <a routerLink="/add-job-vacancy"><i class="fa fa-plus mx-3" aria-hidden="true"></i><span class="title">Add vacancy</span></a>
             <a routerLink="/applicants-list"><i class="fa fa-tasks mx-3" aria-hidden="true"></i><span class="title">Applicants list</span></a>
-            <a routerLink="/login"><i class="fa fa-sign-in mx-3" aria-hidden="true"></i><span class="title">Login</span></a>
+            <a routerLink="/landing-page"><i class="fa fa-th-list mx-3" aria-hidden="true"></i><span class="title">Landing Page</span></a>
+            <a routerLink="/sign-up"><i class="fa fa-sign-in mx-3" aria-hidden="true"></i><span class="title">Signup</span></a>
+
             <a href=""><small>Account</small></a>
             <!-- <a href="#account-settings"><i class="fa fa-cogs mr-3" aria-hidden="true"></i>Settings <span
       class="alert alert-info rounded-circle ml-3" role="alert">
@@ -71,7 +73,7 @@
                         <span class="typcn typcn-user-outline user-icon"></span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" routerLink="/applicants-detail">My Profile</a>
                         <a class="dropdown-item" href="#">Applied Jobs</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Logout</a>
